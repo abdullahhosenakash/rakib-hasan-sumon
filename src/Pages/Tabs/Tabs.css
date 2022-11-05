@@ -1,0 +1,46 @@
+.background-color {
+    background-color: #33302e !important;
+}
+
+.section {
+    width: 75%;
+}
+
+.section-title {
+    font-size: 22px;
+    color: #8e8681;
+    text-transform: uppercase;
+    padding-top: 45px;
+}
+
+.section-title::after {
+    border-bottom: 5px solid #4b4643;
+    content: "";
+    display: block;
+    padding-top: 20px;
+    width: 50px;
+    margin-bottom: 25px;
+}
+
+.section-card-title {
+    color: #dba63c;
+}
+
+.section-card-details {
+    color: #8E8186;
+}
+
+.section-card-read-more-button {
+    color: #dba63c;
+    border: 0;
+    background-color: #33302e;
+    padding-left: 0;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width:992px) {
+    .section {
+        width: 90%;
+    }
+}
