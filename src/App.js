@@ -39,7 +39,7 @@ function App() {
         <Route path="*" element={<NotFound />} />
       </Routes>
 
-      <SectionModal show={show} setShow={setShow} id={id} />
+      {id && <SectionModal show={show} setShow={setShow} id={id} />}
     </div>
   );
 }

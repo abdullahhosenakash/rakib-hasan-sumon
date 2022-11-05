@@ -1,17 +1,22 @@
 .modal-dialog {
-    width: 80% !important;
+    max-width: 70% !important;
 }
 
-.modal-header {
+.modal-body,
+.modal-title {
     background-color: #33302e !important;
+    color: white !important;
+    padding-top: 0 !important;
 }
 
-.modal-body {
-    background-color: #33302e !important;
+.modal-title {
+    padding-left: 15px !important;
+    padding-top: 10px !important;
+    padding-bottom: 0 !important;
 }
 
 @media only screen and (max-width:992px) {
     .modal-dialog {
-        width: 80% !important;
+        max-width: 70% !important;
     }
 }
