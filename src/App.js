@@ -10,15 +10,25 @@ import FineArtPhotography from './Pages/Tabs/FineArtPhotography';
 import NaturePhotography from './Pages/Tabs/NaturePhotography';
 import Contact from './Pages/Tabs/Contact';
 import About from './Pages/Tabs/About';
+import { useState } from 'react';
+import SectionModal from './Pages/Utilities/SectionModal';
 
 function App() {
+  const [show, setShow] = useState(false);
+  const [id, setId] = useState('');
+
+  const photoInfo = (id) => {
+    setId(id);
+    setShow(true);
+  }
+
   return (
     <div>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
-        <Route path="streetPhotography" element={<StreetPhotography />} />
+        <Route path="streetPhotography" element={<StreetPhotography photoInfo={photoInfo} />} />
         <Route path="documentaryPhotography" element={<DocumentaryPhotography />} />
         <Route path="travelPhotography" element={<TravelPhotography />} />
         <Route path="fineArtPhotography" element={<FineArtPhotography />} />
@@ -29,6 +39,7 @@ function App() {
         <Route path="*" element={<NotFound />} />
       </Routes>
 
+      <SectionModal show={show} setShow={setShow} id={id} />
     </div>
   );
 }

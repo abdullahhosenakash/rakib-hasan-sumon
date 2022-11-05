@@ -1,0 +1,17 @@
+.modal-dialog {
+    width: 80% !important;
+}
+
+.modal-header {
+    background-color: #33302e !important;
+}
+
+.modal-body {
+    background-color: #33302e !important;
+}
+
+@media only screen and (max-width:992px) {
+    .modal-dialog {
+        width: 80% !important;
+    }
+}
