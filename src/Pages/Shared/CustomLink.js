@@ -13,7 +13,7 @@ const CustomLink = ({ to, children }) => {
     return (
         <NavLink
             to={to}
-            className="text-decoration-none"
+            className="text-decoration-none hover-effect"
             style={({ isActive }) =>
                 isActive ? activeStyle : notActiveStyle
             }

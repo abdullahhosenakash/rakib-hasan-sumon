@@ -26,8 +26,8 @@ function App() {
     <div>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home photoInfo={photoInfo} />} />
+        <Route path="/home" element={<Home photoInfo={photoInfo} />} />
         <Route path="streetPhotography" element={<StreetPhotography photoInfo={photoInfo} />} />
         <Route path="documentaryPhotography" element={<DocumentaryPhotography />} />
         <Route path="travelPhotography" element={<TravelPhotography />} />
