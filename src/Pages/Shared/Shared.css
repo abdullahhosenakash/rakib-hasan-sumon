@@ -2,6 +2,11 @@
     background-color: #1e1c19 !important;
 }
 
+.navbar-container {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+}
+
 .custom-font-style {
     font-size: 14px !important;
     font-weight: normal !important;
@@ -9,4 +14,16 @@
 
 .hover-effect:hover {
     text-decoration: underline !important;
+}
+
+@media only screen and (max-width:992px) {
+    .navbar-container {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    .custom-font-style {
+        font-size: 16px !important;
+
+    }
 }

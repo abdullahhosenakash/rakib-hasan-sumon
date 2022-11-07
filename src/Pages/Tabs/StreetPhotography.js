@@ -16,11 +16,11 @@ const StreetPhotography = ({ photoInfo, showItems = 2 }) => {
                             <img className='w-100' src={photo.img} alt="" />
                             <h3 className="section-card-title pt-3">{photo.title}</h3>
                             <p className="section-card-details">{photo.details}</p>
-                            <button className="section-card-read-more-button" onClick={() => photoInfo(photo.id)}>Read More</button>
+                            <button className="section-card-read-more-button hover-effect" onClick={() => photoInfo(photo.id)}>Read More</button>
                         </div>
                     )}
                 </div>
-                <CustomLink to="streetPhotography"><span className="fst-italic">More Street Photography {'>'}</span></CustomLink>
+                {showItems === 3 && <CustomLink to="streetPhotography"><span className="fst-italic text-warning">More Street Photography {'>'}</span></CustomLink>}
             </div>
         </div>
     );
