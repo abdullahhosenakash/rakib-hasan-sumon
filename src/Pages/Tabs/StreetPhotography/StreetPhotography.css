@@ -1,4 +1,4 @@
-/* .background-color {
+.background-color {
     background-color: #33302e !important;
 }
 
@@ -39,16 +39,10 @@
     margin-bottom: 30px;
 }
 
-.documentary-section {
-    width: 70% !important;
-}
-
-.documentary-photo {}
-
 @media only screen and (max-width:992px) {
 
     .section,
     .documentary-section {
         width: 90% !important;
     }
-} */
+}

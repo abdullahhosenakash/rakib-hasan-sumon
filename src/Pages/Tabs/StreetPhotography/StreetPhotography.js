@@ -1,11 +1,10 @@
 import React from 'react';
-import usePhotos from '../../hooks/usePhotos';
-import CustomLink from '../Shared/CustomLink';
-import './Tabs.css';
+import usePhotos from '../../../hooks/usePhotos';
+import CustomLink from '../../Shared/CustomLink';
+import './StreetPhotography.css';
 
 const StreetPhotography = ({ photoInfo, showItems = 2 }) => {
     const [photos] = usePhotos();
-    console.log(photos)
     return (
         <div className='background-color pb-5'>
             <div className="section mx-auto">

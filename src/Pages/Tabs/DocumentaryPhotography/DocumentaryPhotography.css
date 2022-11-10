@@ -1,0 +1,14 @@
+.documentary-section {
+    width: 70% !important;
+}
+
+.documentary-photo {
+    width: 35%;
+}
+
+@media only screen and (max-width:992px) {
+
+    .documentary-section {
+        width: 90% !important;
+    }
+}
