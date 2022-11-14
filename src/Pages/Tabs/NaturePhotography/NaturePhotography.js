@@ -1,6 +1,6 @@
 import React from 'react';
-import usePhotos from '../../hooks/usePhotos';
-import CustomLink from '../Shared/CustomLink';
+import usePhotos from '../../../hooks/usePhotos';
+import CustomLink from '../../Shared/CustomLink';
 
 const NaturePhotography = ({ photoInfo, showItems = 1 }) => {
     const [photos] = usePhotos();
