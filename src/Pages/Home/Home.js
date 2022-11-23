@@ -8,10 +8,10 @@ import './Home.css';
 const Home = ({ photoInfo }) => (
   <div>
     <Banner />
-    <StreetPhotography photoInfo={photoInfo} showItems={3} />
-    <div className="background-color">
-      <div className="background-color d-flex gap-3 mx-auto">
-        <DocumentaryPhotography photoInfo={photoInfo} showItems={1} />
+    <StreetPhotography photoInfo={photoInfo} />
+    <div className='background-color'>
+      <div className='d-flex gap-3 mx-auto'>
+        <DocumentaryPhotography photoInfo={photoInfo} />
         <NaturePhotography />
       </div>
     </div>

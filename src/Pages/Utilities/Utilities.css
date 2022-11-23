@@ -1,24 +1,24 @@
 .modal-dialog {
-    max-width: 70% !important;
+  max-width: 70% !important;
 }
 
 .modal-body,
 .modal-title {
-    background-color: #33302e !important;
-    color: white !important;
-    padding-top: 0 !important;
+  background-color: #33302e !important;
+  color: white !important;
+  padding-top: 0 !important;
 }
 
 .modal-title {
-    padding-left: 15px !important;
-    padding-top: 10px !important;
-    padding-bottom: 0 !important;
+  padding-left: 15px !important;
+  padding-top: 10px !important;
+  padding-bottom: 0 !important;
 }
 
-@media only screen and (max-width:992px) {
-    .modal-dialog {
-        max-width: 80% !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
-    }
+@media only screen and (max-width: 992px) {
+  .modal-dialog {
+    max-width: 80% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
 }
